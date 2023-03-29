@@ -25,7 +25,7 @@ export default function Navbar() {
                                 About
                             </div>
                         </Link>
-                        <Link className="navbar-item" href="/contact-us">
+                        <Link className="navbar-item" href="/contact">
                             <div className='navbar-item'>
                                 Contact Us
                             </div>

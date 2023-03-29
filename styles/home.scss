@@ -16,14 +16,15 @@
     align-items: center;
     .is-multiline {
         .column {
-            background-color: #21252997;
             border-radius: 10px;
         }
         h2 {
             color: #fff;
+            text-shadow: #31004a 0px 0px 5px;
         }
         p {
             color: #fff;
+            text-shadow: #31004a 0px 0px 5px;
         }
     }
 }
