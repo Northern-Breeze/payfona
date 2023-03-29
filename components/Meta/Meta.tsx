@@ -12,19 +12,22 @@ export default function Meta(props: Props) {
   return (
     <Head>
       <title>{title}</title>
-      <meta property='og:title' content='2pay' key='title' />
+      <meta name='description' content={description} />
+      <link rel='icon' href='/images/logo.png' />
+      <meta property='og:title' content='Payfona' key='title' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta name='description' content={description} />
-      <meta name='name' content='The Ultimate News' />
+      <meta name="author" content="Payfona" />
+      <meta name='name' content='Payfona' />
       <meta name='keywords' content={keywords} />
     </Head>
   );
 }
 
 Meta.defaultProps = {
-  title: "Payfona - payments resilience",
+  title: "Payfona - Empowering Your Business with Accurate Invoicing Solutions",
   keywords:
-    "Peer 2 peer, payments, Invoicing, Scan to pay, Payment links, make payments easily",
+    "Invoicing, subscriptions, Small size business invoicing, Medium size business invoicing, South African Invoice",
   description:
-    "2pay is a payments solution for small business and peer to peer user's",
+    "Payfona is an invoice and subscription service for small and medium business",
 };
