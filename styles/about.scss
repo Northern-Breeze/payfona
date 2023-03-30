@@ -3,6 +3,11 @@
     flex-direction: row;
     justify-content: center;
     grid-gap: 20rem;
+    height: 100vh;
+    align-items: center;
+    background-color: #31004a;
+    color: #fff;
+    border-radius: 15px;
     .left-info {
         display: flex;
         justify-content: center;
@@ -10,8 +15,8 @@
         flex-direction: column;
         height: 50vh;
         .color-header {
-            color: #31004a;
             margin: 0px;
+            text-decoration: underline;
         }
         .description {
             max-width: 800px;

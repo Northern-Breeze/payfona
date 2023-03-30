@@ -18,3 +18,18 @@
         cursor: pointer;
     }
 }
+.buttons {
+    text-decoration: none !important;
+    .button {
+        text-decoration: none !important;
+        &:hover {
+            background-color: #31004a;
+        }
+    }
+    .button.is-outlined {
+        background-color: #fff;
+        border: 1px solid #31004a;
+        color: #31004a;
+        text-decoration: none !important;
+    }
+}

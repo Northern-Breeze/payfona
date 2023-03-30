@@ -1,16 +1,20 @@
 .contact-us {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    grid-gap: 10rem;
     height: 100vh;
-    width: 100vw;
+    margin: 2rem;
+    gap: 2rem;
     .left-show {
-        h1 {
-            color: $primary-color;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $primary-color;
+        padding: 5rem;
+        color: #fff;
+        border-radius: 10px;
+        height: 100vh;
         .feedback-text {
             width: 600px;
             font-size: 20px;

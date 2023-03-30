@@ -30,12 +30,12 @@ export default function ContactUs() {
     };
 
     return (
-        <div className='contact-us'>
-            <div className='left-show'>
+        <div className='columns contact-us'>
+            <div className='column left-show'>
                 <h1 className='mb-4 is-size-1 is-size-3-mobile has-text-weight-bold'>Contact Us</h1>
                 <p className='feedback-text'>We all love feedback especially us, reach out to us on anything and everything</p>
             </div>
-            <div className='right-details'>
+            <div className='column right-details'>
                 <div>
                     <form className='form' onSubmit={handleSubmit(onSubmit)}>
                         <div className="field">
@@ -104,7 +104,7 @@ export default function ContactUs() {
                             <div className="field-body">
                                 <div className="field">
                                     <div className="control">
-                                        <textarea className="textarea" placeholder="Explain how we can help you" {...register("message", {
+                                        <textarea className={`textarea ${errors.message && "is-danger"}`} placeholder="Explain how we can help you" {...register("message", {
                                             required: 'A message is required'
                                         })}></textarea>
                                     </div>

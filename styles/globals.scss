@@ -13,11 +13,11 @@ body {
 
 a {
   color: inherit;
-  text-decoration: underline;
 }
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 @import './navbar.scss';
