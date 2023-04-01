@@ -49,10 +49,10 @@ export default function Navbar() {
         <div className="navbar-item">
           <div className="buttons">
             <button className="button is-outlined" onClick={() => {
-                router.push("https://payfona.netlify.app/login");
+                router.push("https://payfona.com/login");
             }} >Login</button>
             <button className="button is-primary" onClick={() => {
-                router.push("https://payfona.netlify.app/register");
+                router.push("https://payfona.com/register");
             }}>
               Sign up
             </button>
