@@ -2,10 +2,16 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
-    const router = useRouter();
-    return (
+  const router = useRouter();
+
+  const [isNavCollapsed, setIsNavCollapsed] = React.useState(false);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
+  return (
     <nav className="navbar py-4">
       <div className="container is-fluid">
         <div className="navbar-brand">
@@ -13,51 +19,64 @@ export default function Navbar() {
             <Link href="/">
               <Image
                 className="image"
-                src="/images/logo.png"
-                alt="2pay logo"
-                height="50"
+                src="/images/payfona.png"
+                alt="Payfona logo"
+                height="100"
                 width="50"
               />
             </Link>
           </div>
           <button
-            className="navbar-burger"
+            className={`${isNavCollapsed ? "is-active" : ""} navbar-burger`}
             role="button"
             aria-label="menu"
             aria-expanded="false"
+            onClick={handleNavCollapse}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </button>
         </div>
-        <div className="navbar-menu">
+        <div className={`${isNavCollapsed ? "is-active" : ""} navbar-menu`}>
           <div className="navbar-item">
-            <Link href="/about">
-              <div className="navbar-item">About</div>
+            <Link className="navbar-item" href="/about">
+              About
             </Link>
+          </div>
+          <div className="navbar-item">
             <Link className="navbar-item" href="/contact">
-              <div className="navbar-item">Contact Us</div>
+              Contact Us
             </Link>
+          </div>
+          <div className="navbar-item">
             <Link className="navbar-item" href="/blog">
-              <div className="navbar-item">Blog</div>
+              Blog
             </Link>
           </div>
         </div>
       </div>
       <div className="navbar-end">
-        <div className="navbar-item">
-          <div className="buttons">
-            <button className="button is-outlined" onClick={() => {
-                router.push("https://app.payfona.com/login");
-            }} >Login</button>
-            <button className="button is-primary" onClick={() => {
-                router.push("https://app.payfona.com/register");
-            }}>
-              Sign up
-            </button>
-          </div>
-        </div>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="button is-outlined"
+          onClick={() => {
+            router.push("https://app.payfona.com/login");
+          }}
+        >
+          Login
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="button is-primary"
+          onClick={() => {
+            router.push("https://app.payfona.com/login");
+          }}
+        >
+          Login
+        </motion.button>
       </div>
     </nav>
   );

@@ -1,5 +1,5 @@
-@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
 @import './utils';
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
 
 html,
 body {
@@ -9,6 +9,7 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 a {

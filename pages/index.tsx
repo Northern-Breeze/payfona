@@ -1,8 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import NewsLatterForm from "../components/Newsletter";
-import format from "date-fns/format";
+import { motion } from "framer-motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useRouter } from "next/router";
 
@@ -49,37 +45,38 @@ export default function Home() {
                 sizes.
               </p>
               <div>
-                <button className="button is-primary" onClick={() => {
-                  router.push("https://payfona.netlify.app/register");
-                }}>Get Started</button>
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="button is-primary"
+                  onClick={() => {
+                    router.push("https://payfona.netlify.app/register");
+                  }}
+                >
+                  Get Started
+                </motion.button>
               </div>
             </div>
           </div>
           <div className="column"></div>
         </div>
       </section>
-      <section className="section">
+      <section className="section-1">
         <div className="about_wrapper">
-          <div className="left-info">
-            <div>
               <h1 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold color-header">
                 What is Payfona
               </h1>
-            </div>
-            <p className="description is-paragraph">
+            <p className="description">
               Payfona provides efficient and accurate invoice and subscription
               solutions to small and medium businesses. Our easy-to-use software
               allows you to customize invoices to fit your business needs and
               streamline your billing process. With our innovative payment link
-            </p>
-            <p className="description is-paragraph">
-              feature, your customers can make payments with ease and
+              feature, your customers can make payments with ease and <br />
               convenience, reducing the hassle of manual payments and late fees.
               Our dedicated support team is always available to assist you with
               any questions or concerns. Trust Payfona to provide you with the
               invoicing and subscription solutions you need to succeed.
             </p>
-          </div>
         </div>
       </section>
       <section className="section">
