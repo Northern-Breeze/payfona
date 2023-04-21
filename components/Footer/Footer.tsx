@@ -8,11 +8,11 @@ export default function Footer() {
     <footer className="section">
       <div className="container">
         <div className="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
-          <div className="mr-auto mb-2">
+          <div className="logo-container mr-auto mb-2">
             <Link className="is-inline-block" href="/">
               <Image
                 className="image"
-                src="/images/logo.png"
+                src="/images/payfona.png"
                 alt=""
                 width="96"
                 height="25"

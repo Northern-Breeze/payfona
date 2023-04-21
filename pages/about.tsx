@@ -5,7 +5,7 @@ export default function about() {
     <div className="about_wrapper">
       <div className="left-info">
         <div>
-          <h1 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold color-header">
+          <h1 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">
             What is Payfona
           </h1>
         </div>

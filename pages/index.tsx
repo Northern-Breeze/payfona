@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 type Inputs = {
   name: string;
@@ -61,22 +62,82 @@ export default function Home() {
           <div className="column"></div>
         </div>
       </section>
-      <section className="section-1">
-        <div className="about_wrapper">
-              <h1 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold color-header">
-                What is Payfona
-              </h1>
-            <p className="description">
-              Payfona provides efficient and accurate invoice and subscription
-              solutions to small and medium businesses. Our easy-to-use software
-              allows you to customize invoices to fit your business needs and
-              streamline your billing process. With our innovative payment link
-              feature, your customers can make payments with ease and <br />
-              convenience, reducing the hassle of manual payments and late fees.
-              Our dedicated support team is always available to assist you with
-              any questions or concerns. Trust Payfona to provide you with the
-              invoicing and subscription solutions you need to succeed.
+      <section className="about-section" id="about-section">
+        <div className="about-section-intro">
+          <p className="header-small is-upper-case">What is Payfona</p>
+          <h1 className="header-large">Power Your Payments with Payfona.</h1>
+          <p className="description">
+            Welcome to Payfona - your one-stop solution for all your software
+            service needs! Our business is dedicated to providing you with
+            top-notch invoicing, subscription management, and virtual
+            point-of-sale (POS) services that are easy to use, reliable, and
+            affordable. At Payfona, we understand that managing financial
+            transactions can be a challenging task for any business. That&apos;s
+            why we&apos;ve designed our software services to simplify the
+            process, so you can focus on what really matters - growing your
+            business.
+          </p>
+        </div>
+        <div className="columns m-5 about-section-first">
+          <div className="column">
+            <Image
+              src="/images/about-section-first.jpg"
+              alt="About Section Image"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="column">
+            <h1 className="is-size-1">Invoicing</h1>
+            <p className="about-section-info is-mobile">
+              Say goodbye to the hassle of manually creating and tracking
+              invoices. With Payfona, you can quickly generate
+              professional-looking invoices and send them to your clients with
+              just a few clicks. Our platform also allows you to set up
+              automatic payment reminders and add payment options, so you can
+              get paid on time and keep your cash flow steady
             </p>
+          </div>
+        </div>
+        <div className="columns m-5 about-section-first">
+          <div className="column">
+            <h1 className="is-size-1">Subscriptions</h1>
+            <p className="about-section-info is-mobile">
+              If your business offers subscription-based services, Payfona can
+              help you manage them seamlessly. Our software makes it easy to
+              create, update, and cancel subscriptions, as well as track
+              customer usage and billing history. Whether your own a gym or your
+              are a landlord we can help with recurring payments
+            </p>
+          </div>
+          <div className="column">
+            <Image
+              src="/images/about-section-second.jpg"
+              alt="About Section Image"
+              width={600}
+              height={600}
+            />
+          </div>
+        </div>
+        <div className="columns m-5 about-section-first">
+          <div className="column">
+            <Image
+              src="/images/about-section-third.jpg"
+              alt="About Section Image"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="column">
+            <h1 className="is-size-1">Virtual (POS)</h1>
+            <p className="about-section-info is-mobile">
+              If your business offers subscription-based services, Payfona can
+              help you manage them seamlessly. Our software makes it easy to
+              create, update, and cancel subscriptions, as well as track
+              customer usage and billing history. Whether your own a gym or your
+              are a landlord we can help with recurring payments
+            </p>
+          </div>
         </div>
       </section>
       <section className="section">

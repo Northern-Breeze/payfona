@@ -1,6 +1,11 @@
 @import './utils';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
 
+:root {
+  --font-family: $font-family
+  --text-color: #00000;
+}
+
 html,
 body {
   padding: 0;
@@ -26,3 +31,4 @@ a {
 @import './about.scss';
 @import './contact-us.scss';
 @import './services.scss';
+@import './footer.scss';

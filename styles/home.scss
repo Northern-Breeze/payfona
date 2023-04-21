@@ -1,45 +1,72 @@
-@import './utils';
+@import "./utils";
 
 .landing-section {
-    background-color: #31004a;
-    button {
-        background-color: #31004a;
-        color: #fff;
-    }
-}
-.header {
-    display: flex;
-    background-image: url('../public/images/background.jpg');
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    .column {
-        min-width: 10rem;
-        p.title {
-            color: #fff;
-            font-size: 5rem;
-            text-decoration: underline;
-        }
-        p.subtitle {
-            color: #fff;
-            font-size: 2rem;
-        }
-        .button {
-            min-width: 10rem;
-            color: #fff;
-            border: 2px solid $primary-color;
-            background-color: $primary-color;
-            &:hover {
-                color: #fff;
-                background-color: $primary-color;
-            }
-        }
-    }
-}
-footer {
+  background-color: #31004a;
+  button {
     background-color: #31004a;
     color: #fff;
+  }
+}
+.header {
+  display: flex;
+  background-image: url("../public/images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  .column {
+    min-width: 10rem;
+    p.title {
+      color: #fff;
+      font-size: 5rem;
+      text-decoration: underline;
+    }
+    p.subtitle {
+      color: #fff;
+      font-size: 2rem;
+    }
+    .button {
+      min-width: 10rem;
+      color: #fff;
+      border: 2px solid $primary-color;
+      background-color: $primary-color;
+      &:hover {
+        color: #fff;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  .about-section-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header-small {
+      font-weight: 500;
+      font-size: medium;
+    }
+    .header-large {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .description {
+      max-width: calc(100vw - 20rem);
+    }
+  }
+  .about-section-first {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+footer {
+  background-color: #31004a;
+  color: #fff;
 }
