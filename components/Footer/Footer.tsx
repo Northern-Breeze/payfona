@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="pt-5" style={{ borderTop: "1px solid #dee2e6" }}></div>
       <div className="container">
         <div className="is-flex-tablet is-justify-content-between is-align-items-center">
-          <p>All rights reserved © Payfona {format(new Date(), "yyyy")}</p>
+          <p className="is-size-4 text-white">All rights reserved © Payfona {format(new Date(), "yyyy")}</p>
           <div className="py-2 is-hidden-tablet"></div>
           <div className="ml-auto"></div>
         </div>

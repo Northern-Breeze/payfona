@@ -40,12 +40,12 @@ export default function Navbar() {
         </div>
         <div className={`${isNavCollapsed ? "is-active" : ""} navbar-menu`}>
           <div className="navbar-item">
-            <Link className="navbar-item" href="/about">
+            <Link className="navbar-item" href="#about-section">
               About
             </Link>
           </div>
           <div className="navbar-item">
-            <Link className="navbar-item" href="/contact">
+            <Link className="navbar-item" href="#contact-us">
               Contact Us
             </Link>
           </div>

@@ -39,11 +39,13 @@ export default function Home() {
       <section className="section header hero is-large">
         <div className="columns container">
           <div className="column is-four-fifths">
-            <div className="column is-12 is-6-desktop mx-auto">
+            <div className="column mx-auto">
               <p className="title">Payfona</p>
               <p className="subtitle">
-                We provide accurate invoicing solutions for businesses of all
-                sizes.
+                At Payfona, we&apos;re committed to providing you with the best
+                possible software services, backed by our world-class customer
+                support team. So why wait? Sign up for Payfona today and start
+                simplifying your financial transactions!
               </p>
               <div>
                 <motion.button
@@ -65,7 +67,7 @@ export default function Home() {
       <section className="about-section" id="about-section">
         <div className="about-section-intro">
           <p className="header-small is-upper-case">What is Payfona</p>
-          <h1 className="header-large">Power Your Payments with Payfona.</h1>
+          <h1 className="is-size-1">Power Your Payments with Payfona.</h1>
           <p className="description">
             Welcome to Payfona - your one-stop solution for all your software
             service needs! Our business is dedicated to providing you with
@@ -140,9 +142,22 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section contact-us-section" id="contact-us">
         <div className="columns contact-us">
-          <div className="column left-show">
+          <motion.div
+              layout
+              className="left-show"
+              initial={{
+                height: 200,
+                width: 200,
+                borderRadius: 50
+              }}
+              animate={{
+                height: 600,
+                width: 700,
+                borderRadius: 10
+              }}
+            >
             <h1 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">
               Contact Us
             </h1>
@@ -150,7 +165,7 @@ export default function Home() {
               We all love feedback especially us, reach out to us on anything
               and everything
             </p>
-          </div>
+            </motion.div>
           <div className="column right-details">
             <div>
               <form className="form" onSubmit={handleSubmit(onSubmit)}>
